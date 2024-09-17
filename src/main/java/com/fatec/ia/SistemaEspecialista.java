@@ -59,11 +59,6 @@ public class SistemaEspecialista {
             return "Pode sair: Não está chovendo e local é perto!";
         }
 
-        // Regra: Se distância é longe, sem carro e sem dinheiro, então não pode sair
-        if (!distanciaDoLocalPerto && !carroDisponivel && !temDinheiro) {
-            return "Não pode sair: Distância longe, sem carro e sem dinheiro!";
-        }
-
         // Regra: Se vai beber e tem trabalho amanhã, então não pode sair
         if (vaiBeber && trabalhoAmanha) {
             return "Não pode sair: Vai beber e tem trabalho amanhã!";
